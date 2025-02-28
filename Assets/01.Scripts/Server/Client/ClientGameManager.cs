@@ -15,7 +15,6 @@ public class ClientGameManager : IDisposable
     {
 
         _networkClient = new NetworkClient(NetworkManager.Singleton);
-        //5¹ø ½ÃµµÇØ¼­ ³ª¿Â °á°ú¸¦ ¹Ş´Â´Ù.
     }
 
     public void GotoMenu()
@@ -25,7 +24,7 @@ public class ClientGameManager : IDisposable
 
     public void StartClientAsync()
     {
-        //¿©±â´Ù°¡ µ¥ÀÌÅÍ¸¦ °°ÀÌ º¸³½´Ù
+        //ì—¬ê¸°ë‹¤ê°€ ë°ì´í„°ë¥¼ ê°™ì´ ë³´ë‚¸ë‹¤
         UserData userData = new UserData
         {
             username = PlayerPrefs.GetString("Name", "Unknown"),
